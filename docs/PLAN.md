@@ -9,7 +9,7 @@ A branded Gift Index study with counted rarity numbers and seven gift scores, th
 - [x] Count 2,020,000 charts (births 1926–2026) + 400,000 (1781–2030) + birth-time error sample
 - [x] Seven gift families and scoring; one-person reading
 - [x] Study document v1 (Claude doc "The Gift Index — Field Guide (v1)")
-- [ ] Put this code on GitHub (repo `bensproemail/gift-index` must be created by Ben first), then install the full dev harness
+- [x] Put this code on GitHub (repo `bensproemail/gift-index`) and install the dev harness (decision 0003)
 - [ ] Download real world age figures (UN) to replace the recalled age mix
 - [ ] Exalted / detriment planets (needs the Rave I'Ching in hand)
 - [ ] Ra's own channel keynotes beside the Parkyn wording
@@ -17,7 +17,10 @@ A branded Gift Index study with counted rarity numbers and seven gift scores, th
 - [ ] Attach the 192 cross names
 - [ ] Verify the remaining Gene Keys Gift words against the book
 - [ ] Brand name and look
-- [ ] Lookup tool: enter a birth moment, get the reading
+- [x] Lookup tool v1: enter a birth moment, get the reading (decisions 0004, 0005). Command line: `python3 -m giftindex.lookup`. Page: `npm run build`, published as the Claude artifact "Gift Index Lookup"
+- [ ] Ben tries the lookup on his phone and says what to change
+- [ ] Lookup v2 ideas: cross names once attached; a bodygraph drawing; brand look once chosen; share-safe summary card
 
 ## Blocked / notes
-- Creating the GitHub repo from the cloud session was refused (Nov 11 2026). Code is committed locally only.
+- Real UN age figures: changing the age mix changes every "living people" number, so the count, `ref.json`, the page and the Field Guide must all be redone together. Do it as one step, not piecemeal.
+- The lookup page carries Swiss Ephemeris positions as baked data. Before the page goes public under a brand, have someone qualified confirm two things: that baked positions carry no Swiss Ephemeris licence duty (our reading in decision 0004, not legal advice), and that the short Parkyn summaries and Gene Keys Gift words are fine to show.

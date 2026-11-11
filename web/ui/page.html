@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gift Index Lookup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="masthead">
+    <p class="eyebrow">The Gift Index</p>
+    <h1>Lookup</h1>
+    <p class="lede">Enter a birth moment. Get how rare the chart is and where it stands in the seven gift families.</p>
+  </header>
+
+  <form class="card entry" id="entry" novalidate>
+    <h2>Birth details</h2>
+    <fieldset class="row">
+      <legend>Date</legend>
+      <label class="field grow"><span>Month</span><select id="f-month"></select></label>
+      <label class="field"><span>Day</span><input id="f-day" type="number" inputmode="numeric" min="1" max="31" autocomplete="off"></label>
+      <label class="field year"><span>Year</span><input id="f-year" type="number" inputmode="numeric" min="1926" max="2030" autocomplete="off"></label>
+    </fieldset>
+    <fieldset class="row">
+      <legend>Clock time</legend>
+      <label class="field"><span>Hour</span><input id="f-hour" type="number" inputmode="numeric" min="1" max="12" autocomplete="off"></label>
+      <label class="field"><span>Minute</span><input id="f-minute" type="number" inputmode="numeric" min="0" max="59" autocomplete="off"></label>
+      <div class="field seg" role="radiogroup" aria-label="AM or PM">
+        <span>AM or PM</span>
+        <div class="seg-box">
+          <label><input type="radio" name="ampm" id="f-am" value="AM"><b>AM</b></label>
+          <label><input type="radio" name="ampm" id="f-pm" value="PM"><b>PM</b></label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="place">
+      <label class="field grow" id="place-field"><span>Birthplace (city or town)</span>
+        <input id="f-place" type="text" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="place-list" aria-autocomplete="list" placeholder="Start typing a city">
+      </label>
+      <ul id="place-list" class="options" role="listbox" hidden></ul>
+      <p class="hint" id="place-chosen"></p>
+      <button type="button" class="link" id="zone-toggle">Town not listed? Pick the time zone yourself</button>
+      <label class="field grow" id="zone-field" hidden><span>Time zone</span><select id="f-zone"></select></label>
+    </div>
+    <div class="twice" id="twice" hidden>
+      <p>Clocks went back that day, so this clock time happened twice. Which one?</p>
+      <div class="seg-box wide">
+        <label><input type="radio" name="pass" id="f-pass1" value="1" checked><b id="pass1-label">First time</b></label>
+        <label><input type="radio" name="pass" id="f-pass2" value="2"><b id="pass2-label">Second time</b></label>
+      </div>
+    </div>
+    <p class="readback" id="readback" aria-live="polite"></p>
+    <button type="submit" class="go" id="go">Get the reading</button>
+    <p class="hint">The reading is worked out on this device. Nothing you type is saved or sent anywhere.</p>
+  </form>
+
+  <section id="result" aria-live="polite"></section>
+
+  <footer class="notes card quiet">
+    <h2>How to read this</h2>
+    <ol>
+      <li>Every rarity number counts calculated charts. It is not a finding about people.</li>
+      <li>Every gift is a claim made inside the Human Design tradition. None has been tested scientifically.</li>
+      <li>Rare does not mean better.</li>
+      <li>Rarity and gifts are never blended into one score, and percentages are never multiplied.</li>
+    </ol>
+    <dl class="legend" id="legend"></dl>
+    <p class="hint" id="source-line"></p>
+  </footer>
+</main>
+<script type="application/json" id="data-ref">__REF_JSON__</script>
+<script type="application/json" id="data-cities">__CITIES_JSON__</script>
+<script type="application/octet-stream" id="data-ephem">__EPHEM_B64__</script>
+<script>
+__APP_JS__
+</script>
+</body>
+</html>

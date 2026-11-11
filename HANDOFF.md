@@ -1,4 +1,4 @@
-# Gift Index — Handoff (Nov 11 2026)
+# Gift Index — Handoff (Nov 11 2026, after the lookup build)
 
 Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "read HANDOFF.md in bensproemail/gift-index".
 
@@ -7,6 +7,7 @@ Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "
 2. It stands alone. It is not part of The Simulation or the Spiritual Weather Report site.
 
 ## Where everything lives
+0. The lookup tool: "Gift Index Lookup" — https://claude.ai/artifact/BpvikbU1oSaX5d5dmYq3KQ (private to Ben until he shares it).
 1. The study: "The Gift Index — Field Guide (v1)" — https://claude.ai/artifact/EXdKGWA7MsZGnWYKx4KqQL
 2. The code: GitHub repo bensproemail/gift-index (private).
 3. Research notes: Claude Project "The Simulation Skin" docs "Gift Index — Research Base (v2, Nov 11)" and "Gift Index — Build Status (Nov 11)".
@@ -25,6 +26,9 @@ Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "
 2. 2,020,000 random birth times counted (1926–2026, weighted to people alive today).
 3. Matches all seven figures seen from the 2009 Rave Statistics book.
 4. Field Guide v1 written: rarity tables, 7 gift families, scoring method, worked example, gaps, sources.
+5. Dev harness installed (one check command, code map, decision records).
+6. Lookup tool v1 built and published: type a birth date, time and town, get the reading. It reproduces the Field Guide's worked example exactly.
+7. The lookup page uses this engine's own planet positions (baked in), so it matches the counter: 38,998 of 39,000 test placements identical, the other two on a Base edge.
 
 ## Top findings
 1. The typical chart setup is shared by about 1 person in 165.
@@ -33,25 +37,26 @@ Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "
 4. A 15-minute birth-time error changes the Sun's Tone in 40% of charts.
 
 ## Waiting on Ben
-1. Read the Field Guide and say what to change.
-2. Pick the brand name and look.
+1. Try the lookup tool on a phone and say what to change.
+2. Read the Field Guide and say what to change.
+3. Pick the brand name and look.
 
 ## Next steps for Claude
-1. Install the full dev harness in this repo.
-2. Build the lookup tool: type a birth time, get the reading.
-3. Load real UN world age figures to replace the recalled ones.
-4. Add exalted and detriment planets (needs the Rave I'Ching in hand).
-5. Add Ra's channel keynotes beside the Parkyn wording.
-6. Attach the 192 cross names.
-7. Check the remaining 34 Gene Keys Gift words against the book.
-8. Decide whether type, lines and centers enter the gift scores.
+1. Apply Ben's changes to the lookup tool.
+2. Load real UN world age figures to replace the recalled ones (redo the count, the page numbers and the Field Guide together).
+3. Add exalted and detriment planets (needs the Rave I'Ching in hand).
+4. Add Ra's channel keynotes beside the Parkyn wording.
+5. Attach the 192 cross names (then show the cross name in the lookup).
+6. Check the remaining 34 Gene Keys Gift words against the book.
+7. Decide whether type, lines and centers enter the gift scores.
+8. Before the lookup goes public: confirm the licence reading in decision 0004 and the use of the short Parkyn and Gene Keys wording.
 
 ## How to run the code
-1. `pip install -r requirements.txt --break-system-packages`
-2. Draw the samples (about 10 minutes total): see the commands in CLAUDE.md.
-3. `python3 -m giftindex.count data/living.npz data/alltime.npz data/shift.npz data/results.json`
-4. `python3 -m pytest -q`
-5. Outside checks need the spiritual-weather-report repo cloned: `python3 tools/xcheck/validate.py <its path>`
+1. `pip install -r requirements.txt --break-system-packages` and `npm ci`
+2. `npm run check` — every lint and test. Must pass before a commit.
+3. `python3 -m giftindex.lookup 1980-03-04 07:42 America/Chicago` — the lookup as text (the made-up Sample Reader).
+4. `npm run build` — builds the lookup page into `dist/index.html`; publish that file over the artifact above.
+5. Rebuilding the count or the page data: see the commands in CLAUDE.md.
 
 ## Rules
 1. Never type or invent a real person's birth details. Examples use the made-up Sample Reader.
