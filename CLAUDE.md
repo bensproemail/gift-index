@@ -6,7 +6,8 @@
 The chart counter behind Ben's Gift Index study, and the lookup tool built on it. The counter computes Human
 Design charts for millions of random birth moments, counts how rare every chart element is, and scores seven
 gift families. The lookup tool takes one birth moment and shows that chart's rarity and gift scores.
-Standalone. It is NOT part of The Simulation or the Spiritual Weather Report site.
+Brand: The Spiritual Weather Report (decision 0006). The code is standalone: it is NOT part of The Simulation or the
+Spiritual Weather Report site's code.
 
 ## Stack
 - Python 3 (numpy, pyswisseph in Moshier mode, pytest, ruff): the engine and the count. This is the reference.
@@ -50,6 +51,7 @@ See `CODEMAP.md` (auto-generated). Don't explore the tree manually. In short:
 - Every number in the study must come from `data/results.json` or a labeled outside source.
 - Never present a gift claim as proven. Label every claim: COUNT, RA, BOOK, CALC, STUDY, TEACHER, GK, MINE.
 - Never multiply percentages across linked traits. Combined rarity comes only from counting.
+- Naming (tested): on anything a reader sees, always "Jennie Marie", and never name her other business.
 
 ## Decisions
 See `docs/decisions/`. Follow them; supersede with a new record rather than ignoring one.

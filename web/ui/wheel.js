@@ -46,8 +46,8 @@ export function wheelFigure(ref, rep) {
       // neighbours that are both active get their numbers on alternating rings so they never collide
       far = far === false && wasActive;
       const [x, y] = point(i, far ? 171 : 157);
-      svg.append(s('text', { x: x.toFixed(1), y: (y + 3.5).toFixed(1), 'text-anchor': 'middle', 'font-size': 10,
-        'font-family': 'var(--mono)', fill: 'var(--ink)' }, gate));
+      svg.append(s('text', { x: x.toFixed(1), y: (y + 3.5).toFixed(1), 'text-anchor': 'middle', 'font-size': 11,
+        'font-family': 'var(--cond)', fill: 'var(--ink)' }, gate));
       wasActive = true;
     } else {
       wasActive = false;
@@ -57,8 +57,8 @@ export function wheelFigure(ref, rep) {
   for (const key of c.channels) svg.append(...chord(wheel, key, c.channel_kind[key]));
   svg.append(
     s('circle', { cx: MID, cy: MID, r: 46, fill: 'var(--card)' }),
-    s('text', { x: MID, y: MID + 6, 'text-anchor': 'middle', 'font-size': 44, 'font-weight': 800, 'font-family': 'var(--display)', fill: 'var(--ink)' }, c.profile),
-    s('text', { x: MID, y: MID + 28, 'text-anchor': 'middle', 'font-size': 11, 'font-family': 'var(--mono)', fill: 'var(--muted)', 'letter-spacing': 1.2 }, c.type.toUpperCase()));
+    s('text', { x: MID, y: MID + 6, 'text-anchor': 'middle', 'font-size': 44, 'font-weight': 800, 'font-family': 'var(--head)', fill: 'var(--ink)' }, c.profile),
+    s('text', { x: MID, y: MID + 28, 'text-anchor': 'middle', 'font-size': 11, 'font-family': 'var(--cond)', fill: 'var(--muted)', 'letter-spacing': 1.6 }, c.type.toUpperCase()));
   const sun = (side, r, color) => {
     const [x, y] = point(wheel.indexOf(c[side].Sun.gate), r);
     return s('circle', { cx: x.toFixed(1), cy: y.toFixed(1), r: 4.5, fill: 'var(--card)', stroke: color, 'stroke-width': 2.5 });

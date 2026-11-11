@@ -3,8 +3,8 @@
 Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "read HANDOFF.md in bensproemail/gift-index".
 
 ## What this is
-1. The Gift Index is Ben's branded Human Design study: how rare each chart is, and which gifts the tradition ties to it.
-2. It stands alone. It is not part of The Simulation or the Spiritual Weather Report site.
+1. The Gift Index is Ben's Human Design study, branded as The Spiritual Weather Report: how rare each chart is, and which gifts the tradition ties to it.
+2. The code stands alone. It is not part of The Simulation or the Spiritual Weather Report site's code.
 
 ## Where everything lives
 0. The lookup tool: "Gift Index Lookup" — https://claude.ai/artifact/BpvikbU1oSaX5d5dmYq3KQ (private to Ben until he shares it).
@@ -20,6 +20,7 @@ Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "
 3. Ra's teaching first, later teachers labeled, Gene Keys as its own labeled layer.
 4. All 7 gift types, equal weight.
 5. Use the 2009 Rave Statistics book later as a cross-check, if a legal copy turns up.
+6. Brand: The Spiritual Weather Report (name and look). Applied to the lookup tool.
 
 ## What's done
 1. Chart counter built and tested five ways. All checks pass.
@@ -39,7 +40,7 @@ Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "
 ## Waiting on Ben
 1. Try the lookup tool on a phone and say what to change.
 2. Read the Field Guide and say what to change.
-3. Pick the brand name and look.
+3. Decide the voice under the brand: keep source labels and system terms, or follow the site's plain-words rule.
 
 ## Next steps for Claude
 1. Apply Ben's changes to the lookup tool.
