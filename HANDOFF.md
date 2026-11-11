@@ -9,7 +9,7 @@ Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "
 ## Where everything lives
 0. The lookup tool: "Gift Index Lookup" — https://claude.ai/artifact/BpvikbU1oSaX5d5dmYq3KQ (private to Ben until he shares it).
 1. The study: "The Gift Index — Field Guide (v1)" — https://claude.ai/artifact/EXdKGWA7MsZGnWYKx4KqQL
-2. The code: GitHub repo bensproemail/gift-index (private).
+2. The code: GitHub repo bensproemail/gift-index (created public; Ben is switching it to private).
 3. Research notes: Claude Project "The Simulation Skin" docs "Gift Index — Research Base (v2, Nov 11)" and "Gift Index — Build Status (Nov 11)".
 4. Dashboard: Rode Command Center, project card "gift-index".
 5. Gemini's review: https://share.gemini.google/x1s5he1IrFNW
@@ -21,6 +21,7 @@ Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "
 4. All 7 gift types, equal weight.
 5. Use the 2009 Rave Statistics book later as a cross-check, if a legal copy turns up.
 6. Brand: The Spiritual Weather Report (name and look). Applied to the lookup tool.
+7. Wording under that brand: keep the study's source labels and Human Design terms. Do not switch to the site's plain voice.
 
 ## What's done
 1. Chart counter built and tested five ways. All checks pass.
@@ -40,7 +41,7 @@ Paste this into a new chat in the "The Simulation Skin" Claude Project, or say "
 ## Waiting on Ben
 1. Try the lookup tool on a phone and say what to change.
 2. Read the Field Guide and say what to change.
-3. Decide the voice under the brand: keep source labels and system terms, or follow the site's plain-words rule.
+3. Switch the GitHub repo to private (Settings, Danger Zone, Change visibility). It was created public.
 
 ## Next steps for Claude
 1. Apply Ben's changes to the lookup tool.

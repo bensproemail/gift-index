@@ -22,6 +22,9 @@ Report (Nov 11 2026).
 
 ## Consequences
 The look lives in the token block at the top of `web/ui/style.css`; if the site's theme changes, copy the new
-values here. OPEN (Ben to decide): the site never shows book names, page numbers or system words and speaks in
-Jennie Marie's voice, while the Gift Index labels every claim with its source (BOOK, RA, GK ...) and uses the
-system's own terms. Until Ben decides, the Gift Index keeps its own labeling rules under the brand's look.
+values here.
+
+Wording (Ben, Nov 11 2026): the Gift Index KEEPS its study labels under this brand. The site itself never shows
+book names, page numbers or system words and speaks in Jennie Marie's voice; the Gift Index is a study, so it keeps
+labeling every claim with its source (COUNT, RA, BOOK, TEACHER, GK, MINE) and uses the system's own terms. Do not
+swap in the site's voice library here without a new decision.

@@ -17,7 +17,8 @@ A branded Gift Index study with counted rarity numbers and seven gift scores, th
 - [ ] Attach the 192 cross names
 - [ ] Verify the remaining Gene Keys Gift words against the book
 - [x] Brand name and look: The Spiritual Weather Report (decision 0006), applied to the lookup page
-- [ ] Ben decides the voice under that brand: keep source labels and system terms, or follow the site's no-book-names, plain-words rule
+- [x] Wording under that brand: keep the study labels and system terms (Ben, decision 0006)
+- [ ] Ben switches the GitHub repo to private (it was created public; settings changes are blocked from Claude's session)
 - [x] Lookup tool v1: enter a birth moment, get the reading (decisions 0004, 0005). Command line: `python3 -m giftindex.lookup`. Page: `npm run build`, published as the Claude artifact "Gift Index Lookup"
 - [ ] Ben tries the lookup on his phone and says what to change
 - [ ] Lookup v2 ideas: cross names once attached; a bodygraph drawing; brand look once chosen; share-safe summary card
