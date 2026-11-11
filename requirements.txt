@@ -1,3 +1,5 @@
 numpy
 pyswisseph
 pytest
+ruff
+tzdata

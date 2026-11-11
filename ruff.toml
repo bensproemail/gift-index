@@ -1,0 +1,6 @@
+# Python lint: real mistakes only (unused names, undefined names). Style is not enforced.
+line-length = 130
+exclude = ["node_modules", "dist", "tools/xcheck/node_modules"]
+
+[lint]
+select = ["F"]

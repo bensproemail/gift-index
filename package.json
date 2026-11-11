@@ -1,0 +1,30 @@
+{
+  "name": "gift-index",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint . && python3 -m ruff check .",
+    "test": "vitest run --passWithNoTests && python3 -m pytest -q",
+    "codemap": "node scripts/codemap.mjs .",
+    "check": "npm run lint && npm run test",
+    "build": "node scripts/build-web.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bensproemail/gift-index.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bensproemail/gift-index/issues"
+  },
+  "homepage": "https://github.com/bensproemail/gift-index#readme",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "city-timezones": "^1.3.4",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0"
+  }
+}
